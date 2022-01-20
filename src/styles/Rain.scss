@@ -1,0 +1,72 @@
+$total: 144;
+$time: 5;
+$height: 150;
+$percent: 0.9%;
+$dotSize: 0.8;
+
+p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+body {
+  background: black;
+  overflow: hidden;
+}
+
+.wrap {
+  position: relative;
+  height: 100%;
+}
+
+.c {
+  position: absolute;
+  height: $height + px;
+  width: $percent;
+  margin-top: -$height + px;
+  animation: drop $time + s infinite ease-in;
+  &:after {
+    content: "";
+    position: absolute;
+    width: $dotSize + vw;
+    height: $dotSize + vw;
+    border-radius: 50%;
+    left: 50%;
+    bottom: -($dotSize/2) + vw;
+    margin-left: -($dotSize/2) + vw;
+  }
+}
+
+@for $i from 1 through $total {
+  $hue: (300 / $total) * $i;
+  .c:nth-child(#{$i}) {
+    left: ($i - 1) * $percent;
+    background-image: linear-gradient(
+      to bottom,
+      black,
+      hsla($hue, 10%, 90%, 0.8)
+    );
+    animation-delay: random($total) * ($time/$total) * -1s;
+    &:after {
+      background: hsla($hue, 100%, 100%, 1);
+    }
+  }
+}
+
+@keyframes drop {
+  80% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate3d(0, 150vh, 0);
+    opacity: 0;
+  }
+}
+.c:hover {
+  animation-play-state: paused;
+}
+.running {
+  animation-play-state: running;
+}
+.paused {
+  animation-play-state: paused;
+}

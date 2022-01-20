@@ -1,0 +1,58 @@
+.reloadbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1vw;
+  height: 100vh;
+  border-radius: 10px;
+  background: rgb(238, 221, 221);
+  box-shadow: 0 0 10px rgb(238, 116, 116), 0 0 20px rgb(238, 116, 116),
+    0 0 40px rgb(238, 116, 116), 0 0 80px rgb(238, 116, 116),
+    0 0 120px rgb(238, 116, 116), 0 0 160px rgb(238, 116, 116),
+    0 0 220px rgb(238, 116, 116);
+  z-index: 0;
+  animation: animatereloadbar 5s normal forwards ease-in-out;
+}
+
+@keyframes animatereloadbar {
+  0%,
+  10% {
+    transform: scaleY(0) translateX(0);
+  }
+  10% {
+    transform: scaleY(1) translateX(0);
+  }
+  85% {
+    transform: scaleY(1) translateX(calc(100vw - 10px));
+  }
+  90%,
+  100% {
+    transform: scaleY(0) translateX(calc(100vw - 10px));
+  }
+}
+
+.topLayer {
+  position: absolute;
+  top: 0;
+  left: -100vw;
+  width: 100%;
+  height: 100%;
+  background: black;
+  animation: animatetopLayer 5s normal ease-in-out;
+}
+@keyframes animatetopLayer {
+  0%,
+  10% {
+    transform: scaleY(0) translateX(0);
+  }
+  10% {
+    transform: scaleY(1) translateX(0);
+  }
+  85% {
+    transform: scaleY(1) translateX(calc(100vw - 10px));
+  }
+  90%,
+  100% {
+    transform: scaleY(0) translateX(calc(100vw - 10px));
+  }
+}
