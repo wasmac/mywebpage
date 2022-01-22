@@ -1,28 +1,26 @@
-import React, { Component,  } from 'react';
+import React, { Component, useState  } from 'react';
 import Rain from "../components/rain"
 import "../App.css"
 import rain from '../components/rain';
 
 
 class TitleBar extends Component {
+    state = { 
+        currentStatus: "running",
+    }
     render() {
         const {title, continueButtonText} = this.props;
         return (
             <div>
-                {/* <div>{this.isRaining ? this.Raining.rainStatus(this.isRaining) : ""}</div> */}
-                {this.createRain()}
+                <Rain currentStatus = {this.state.currentStatus}/>
                 <h2 className= "mainText" >{title}</h2>
-                <button className = "subText " onClick = {this.deleteRain}>{continueButtonText}</button>
+                <button className = "subText " onClick = {this.handleRain}>{continueButtonText}</button>
             </div>
 
         );
     }
-    createRain = () =>{
-        return rain("running");
-    }
-    deleteRain = () =>{
-        console.log("dupa")
-       // return rain("deleted");
+    handleRain = () =>{
+        this.setState({currentStatus : "paused"});
     }
 }
 

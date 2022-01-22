@@ -1,28 +1,47 @@
 import React, { Component } from 'react';
 import "../styles/Rain.scss"
 
-//fix rain so it works again- the one without render was originall, create git repo cuz this is madness
 //embed the rain into titleBar class, in app.js only call the <Component /> elements
 //make sure that the reloadbar looks like it should, add the functionality that it works after click- not in the begining 
 //clean the app.js 
 //maybe rain can be function like in mosh thingie- when he creates tables
 
+//this class is updated via props
 
-function rain(props) {
-  const currentStatus = props;
-  const pointsNr = 144;
-  const filledArray = new Array(pointsNr);
-  for (let i = 0; i < pointsNr; i++){
-    filledArray[i] = <p key={i} className = {"c " + currentStatus}></p>;
+class Rain extends Component {
+  state = { 
+    pointsNr: 144,
+    filledArray : new Array(this.pointsNr)
+   }
+  render() { 
+    return <div>{this.createRain()}</div>;
   }
-  return currentStatus === "running" ? filledArray : "";
+  createRain = () =>{
+    const {currentStatus} = this.props;
+    const {pointsNr, filledArray} = this.state;
+    for (let i = 0; i < pointsNr; i++){
+      filledArray[i] = <p key={i} className = {"c " + currentStatus} key= {i}></p>;
+    }
+    return currentStatus === "running" ? filledArray : "";
+  }
 }
-
-export default rain;
-
-
+ 
+export default Rain;
 
 
+
+//  const Rain = props => {
+
+//     const currentStatus = props.currentStatus;
+//     const pointsNr = 144;
+//     const filledArray = new Array(pointsNr);
+//     for (let i = 0; i < pointsNr; i++){
+//       filledArray[i] = <p key={i} className = {"c " + currentStatus} key= {i}></p>;
+//     }
+//     return filledArray;
+// }
+
+// export default Rain;
 
 
 // class Rain extends React.Component {
