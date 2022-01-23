@@ -1,42 +1,27 @@
-import React, { Component, useState, AnimationEvent } from 'react';
+import React, { Component} from 'react';
 
+
+// import React, { Component, AnimationEvent, PropTypes  } from 'react';
 //what it should do? 
 //-> create a reloadbar or any animation <p></p> on click
 //-> on same click do log("animation started") onAnimationStart
 //-> onAnimationEnd return a value =1 
 
-
+//why ppl on interent can pass value and i cant?-- PropTypes import
 
 class ReloadBar extends Component {
+    constructor(props){
+        super(props);
+        this.handleAnimation = this.handleAnimation.bind(this);
+    }
+    handleAnimation(){
+        this.props.parentCallback("paused");
+        };
     render() { 
         const {animationName} = this.props;
-        return <p className = {animationName} key= {animationName} onAnimationEnd = {this.handleAnimationEnd} />;
+        return <p className = {animationName} key= {animationName} onAnimationEnd = {this.handleAnimation} />;
     }
 }
 
  
 export default ReloadBar;
-
-
-
-
-
-// class Animations extends React.Component{
-//     constructor(animationId){
-//         super();
-//         this.animationId = animationId; 
-//         const [isClicked, setClicked] = useState(false);   
-//     }
-//     onClick(){
-        
-//         return <p className = {this.animationId} id={this.animationId}></p>
-//     }
-//     animationStatus(){
-//         this.animationId.onAnimationEnd(console.log("sjema"));
-        
-//         //console.log(this.currentStatus);
-//         // this.currentStatus.onAnimationStart(console.log("animation started"))
-//         // this.currentStatus.onAnimationEnd(console.log("animation finished"))
-//     }
-// }
-

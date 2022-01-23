@@ -1,27 +1,39 @@
-import React, { Component, useState  } from 'react';
+import React, { Component} from 'react';
 import Rain from "../components/rain"
 import "../App.css"
-import rain from '../components/rain';
+import "../styles/Reloadbar.css"
+import ReloadBar from "../components/reloadBar"
+
+// import React, { Component, useState, AnimationEvent, PropTypes} from 'react';
+// onAnimationEnd of ReloadBar do handleRain
 
 
 class TitleBar extends Component {
-    state = { 
-        currentStatus: "running",
+    constructor(props){
+        super(props);
+        this.state = {
+            currentStatus: "running"
+        }
+    }
+    setRain = (data) =>{
+        console.log("animation finished- titleBar");
+        this.setState({currentStatus : data});
     }
     render() {
         const {title, continueButtonText} = this.props;
+        const {currentStatus} = this.state;
         return (
             <div>
-                <Rain currentStatus = {this.state.currentStatus}/>
+                <Rain currentStatus = {currentStatus}/>
                 <h2 className= "mainText" >{title}</h2>
-                <button className = "subText " onClick = {this.handleRain}>{continueButtonText}</button>
+                <button className = "subText " onClick = {this.setRain}>{continueButtonText}</button>
+                <ReloadBar animationName= "reloadbar" />
+                <ReloadBar animationName= "topLayer" parentCallback = {this.setRain} />
             </div>
 
         );
     }
-    handleRain = () =>{
-        this.setState({currentStatus : "paused"});
-    }
+
 }
 
  
