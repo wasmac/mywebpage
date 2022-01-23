@@ -3,6 +3,7 @@ import Rain from "../components/rain"
 import "../App.css"
 import "../styles/Reloadbar.css"
 import ReloadBar from "../components/reloadBar"
+import Animations from "./animations"
 
 // import React, { Component, useState, AnimationEvent, PropTypes} from 'react';
 // onAnimationEnd of ReloadBar do handleRain
@@ -27,8 +28,8 @@ class TitleBar extends Component {
                 <Rain currentStatus = {currentStatus}/>
                 <h2 className= "mainText" >{title}</h2>
                 <button className = "subText " onClick = {this.setRain}>{continueButtonText}</button>
-                <ReloadBar animationName= "reloadbar" />
-                <ReloadBar animationName= "topLayer" parentCallback = {this.setRain} />
+                <Animations animationName= "topLayer" />
+                <ReloadBar animationName= "reloadbar" parentCallback = {this.setRain} />
             </div>
 
         );
