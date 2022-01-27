@@ -4,6 +4,8 @@ import "../App.css";
 import "../styles/Reloadbar.css";
 import ReloadBar from "../components/reloadBar";
 import Animations from "./animations";
+import TitleText from "./common/titleText";
+import ContinueButton from "./common/continueButton";
 
 // import React, { Component, useState, AnimationEvent, PropTypes} from 'react';
 // onAnimationEnd of ReloadBar do handleRain
@@ -20,15 +22,12 @@ class TitleBar extends Component {
     this.setState({ currentStatus: data });
   };
   render() {
-    const { title, continueButtonText } = this.props;
     const { currentStatus } = this.state;
     return (
       <div>
         <Rain currentStatus={currentStatus} />
-        <h2 className="mainText">{title}</h2>
-        <button className="subText " onClick={this.setRain}>
-          {continueButtonText}
-        </button>
+        <TitleText title="Maciej Waskiewicz" />
+        <ContinueButton text="Click to see my portfolio" />
         <Animations animationName="topLayer" />
         <ReloadBar animationName="reloadbar" parentCallback={this.setRain} />
       </div>
@@ -37,3 +36,5 @@ class TitleBar extends Component {
 }
 
 export default TitleBar;
+
+//<h2 className="mainText">{title}</h2>
