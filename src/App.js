@@ -1,24 +1,21 @@
-import "./App.css"
-import "./styles/Reloadbar.css"
-import TitleBar from './components/titleBar';
+import { Route, Routes } from "react-router-dom";
+import "./App.css";
+import "./styles/Reloadbar.css";
+import TitleBar from "./components/titleBar";
+import MainMenu from "./components/mainMenu";
 
-
-//maybe setState from here?
-
-//- add typesafe lib so u can see the errors in compilation
-//- make the TitleBar dissapear after animation as well
 //- create a new animation that pops after 2nd rod goes throguh the screen
-//- Create TitleMenu Component that hosts the most important data
-//- maybe retrive that data from aws or smth simillar- git might be an option for hosting
+
+//- create a CSS for MenuButtons, populate them on MainMenu page and create Routing for them
+//- continue with dev of the MainMenu page
 
 const App = () => {
-
-  return(
-     <div>
-      <TitleBar title= "Maciej Waskiewicz" continueButtonText = "Click to see my portfolio" />
-    </div>
+  return (
+    <Routes>
+      <Route path="/" element={<TitleBar />} />
+      <Route path="/mainMenu" element={<MainMenu />} />
+    </Routes>
   );
-
-}
+};
 
 export default App;
