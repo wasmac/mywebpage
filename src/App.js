@@ -1,7 +1,6 @@
-import "./App.css"
-import "./styles/Reloadbar.css"
-import TitleBar from './components/titleBar';
-
+import "./App.css";
+import "./styles/Reloadbar.css";
+import TitleBar from "./components/titleBar";
 
 //maybe setState from here?
 
@@ -11,14 +10,17 @@ import TitleBar from './components/titleBar';
 //- Create TitleMenu Component that hosts the most important data
 //- maybe retrive that data from aws or smth simillar- git might be an option for hosting
 
-const App = () => {
+//- proper routing, make the TitleBar
 
-  return(
-     <div>
-      <TitleBar title= "Maciej Waskiewicz" continueButtonText = "Click to see my portfolio" />
+const App = () => {
+  return (
+    <div>
+      <TitleBar
+        title="Maciej Waskiewicz"
+        continueButtonText="Click to see my portfolio"
+      />
     </div>
   );
-
-}
+};
 
 export default App;
