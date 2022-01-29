@@ -1,13 +1,15 @@
 import React, { Component } from "react";
-import MenuButton from "./common/continueButton";
+import NavBar from "./common/navBar";
+import PictureSlider from "./common/pictureSlider";
+import MainMenuBody from "./mainMenuBody";
 
 class MainMenu extends Component {
   render() {
     return (
       <div>
-        <MenuButton text="Click" />
-        <MenuButton text="Click" />
-        <MenuButton text="Click" />
+        <NavBar />
+        <PictureSlider />
+        <MainMenuBody />
       </div>
     );
   }
