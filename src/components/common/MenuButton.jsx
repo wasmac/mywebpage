@@ -1,10 +1,10 @@
-import React, { Component } from "react";
-import "../../App.css";
+import React from "react";
 
-class MenuButton extends Component {
-  render() {
-    return <button className="subText ">{this.props.text}</button>;
-  }
-}
+//each button navigates to different object
+//it takes "text" "component_name" and privdies "/ + component name form function"
 
-export default MenuButton;
+const MennuButton = () => {
+  return <strong className="p-2">Navigate to</strong>;
+};
+
+export default MennuButton;
