@@ -1,14 +1,14 @@
 import React, { Component } from "react";
-import NavBar from "./common/navBar";
-import PictureSlider from "./common/pictureSlider";
 import MainMenuBody from "./mainMenuBody";
+import TitleText from "./common/titleText";
+import Bonfire from "./common/bonfireGif";
 
 class MainMenu extends Component {
   render() {
     return (
-      <div>
-        <NavBar />
-        <PictureSlider />
+      <div className="w-screen h-screen bg-black">
+        <Bonfire />
+        <TitleText title="Maciej Waskiewicz" />
         <MainMenuBody />
       </div>
     );
@@ -16,3 +16,7 @@ class MainMenu extends Component {
 }
 
 export default MainMenu;
+
+{
+  /* <ReloadBar animationName="reloadbar" parentCallback={this.setRain} /> */
+}

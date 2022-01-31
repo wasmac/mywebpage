@@ -1,10 +1,8 @@
-import React, { Component } from "react";
+import React from "react";
 import "../../App.css";
 
-class TitleText extends Component {
-  render() {
-    return <h2 className="mainText">{this.props.title}</h2>;
-  }
-}
+const TitleText = ({ title }) => {
+  return <h1 className="mainText animate-blur-out">{title}</h1>;
+};
 
 export default TitleText;
