@@ -15,7 +15,7 @@
   text-shadow: 0 0 10px rgb(252, 162, 162), 0 0 20px rgb(238, 116, 116),
     0 0 40px rgb(238, 116, 116), 0 0 80px rgb(209, 71, 71);
   font-size: 8vw;
-  display: flex;
+  display: absolute;
   justify-content: center;
   align-items: center;
   position: absolute;
@@ -44,6 +44,11 @@
   cursor: pointer;
   display: inline-block;
   transition: 0.5s;
+}
+
+.buttonText {
+  font-family: "Adobe Garamond";
+  text-transform: uppercase;
 }
 
 .subText span:hover {

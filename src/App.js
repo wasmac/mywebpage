@@ -1,19 +1,14 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import "./styles/Reloadbar.css";
-import TitleBar from "./components/titleBar";
 import MainMenu from "./components/mainMenu";
 import AboutMe from "./components/pages/aboutMe";
 import Projects from "./components/pages/projects";
 import WorkExpierience from "./components/pages/workExperience";
 import ContactMe from "./components/pages/contactMe";
 
-//- create a new animation that pops after 2nd rod goes throguh the screen
-
-//- create a CSS for MenuButtons, populate them on MainMenu page and create Routing for them
-//- continue with dev of the MainMenu page
-
 //Final conecpt:
+//- first only the continue thing is visible then title appears blured and then it slowly unblurs while its brightinning setting is lowered
 //- make it look as DS ptd edition
 //- big name in center and button that after click is chagning its look to main menu buttons
 //- first animation,screen is blured, the title is slowl getting less brightness unless its easy to look at
@@ -28,14 +23,15 @@ import ContactMe from "./components/pages/contactMe";
 
 const App = () => {
   return (
-    <Routes>
-      <Route path="/" element={<TitleBar />} />
-      <Route path="/mainMenu" element={<MainMenu />} />
-      <Route path="/AboutMe" element={<AboutMe />} />
-      <Route path="/Projects" element={<Projects />} />
-      <Route path="/WorkExpierience" element={<WorkExpierience />} />
-      <Route path="/ContactMe" element={<ContactMe />} />
-    </Routes>
+    <div className="flex bg-black">
+      <Routes>
+        <Route path="/" element={<MainMenu />} />
+        <Route path="/AboutMe" element={<AboutMe />} />
+        <Route path="/Projects" element={<Projects />} />
+        <Route path="/WorkExpierience" element={<WorkExpierience />} />
+        <Route path="/ContactMe" element={<ContactMe />} />
+      </Routes>
+    </div>
   );
 };
 

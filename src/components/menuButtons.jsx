@@ -4,18 +4,21 @@ import { NavLink } from "react-router-dom";
 
 const MenuButtons = () => {
   return (
-    <div className="relative -top-1/4 flex bg-violet-600 justify-center content-center flex-col text-center">
+    <div className="buttonText text-white text-center text-lg font-light relative top-1/4 flex justify-center content-center flex-col ">
       <NavLink to="/WorkExpierience">
-        <MennuButton text="Work Experience" />
+        <MennuButton text="WORK EXPERIENCE" />
       </NavLink>
       <NavLink to="/Projects">
-        <MennuButton text="Projects" />
+        <MennuButton text="PROJECTS" />
       </NavLink>
       <NavLink to="/AboutMe">
-        <MennuButton text="About me" />
+        <MennuButton text="ABOUT ME" />
       </NavLink>
       <NavLink to="/ContactMe">
-        <MennuButton text="Contact Me!" />
+        <MennuButton text="CONTACT ME!" />
+      </NavLink>
+      <NavLink to="/">
+        <MennuButton text="QUIT" />
       </NavLink>
     </div>
   );
