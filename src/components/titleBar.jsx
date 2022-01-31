@@ -6,6 +6,7 @@ import ReloadBar from "../components/reloadBar";
 import Animations from "./animations";
 import TitleText from "./common/titleText";
 import ContinueButton from "./common/continueButton";
+import { NavLink } from "react-router-dom";
 
 // import React, { Component, useState, AnimationEvent, PropTypes} from 'react';
 // onAnimationEnd of ReloadBar do handleRain
@@ -27,7 +28,9 @@ class TitleBar extends Component {
       <div>
         <Rain currentStatus={currentStatus} />
         <TitleText title="Maciej Waskiewicz" />
-        <ContinueButton text="Click to see my portfolio" />
+        <NavLink to="/mainMenu">
+          <ContinueButton text="Click to see my portfolio" />
+        </NavLink>
         <Animations animationName="topLayer" />
         <ReloadBar animationName="reloadbar" parentCallback={this.setRain} />
       </div>

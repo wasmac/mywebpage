@@ -5,12 +5,12 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 const PictureSlider = () => {
   return (
     <div className=" flex w-screen h-40 bg-pink-500 text-white items-center justify-center text-5xl">
-      <Carousel autoPlay>
+      <Carousel showThumbs={false}>
         <div>
-          <strong>Yo</strong>
+          <strong>Maciej Waskiewicz</strong>
         </div>
         <div>
-          <strong>Bo</strong>
+          <strong>is EVERYTHING</strong>
         </div>
       </Carousel>
     </div>
