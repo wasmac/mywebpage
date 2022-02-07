@@ -43,12 +43,26 @@
   padding: 14px 28px;
   cursor: pointer;
   display: inline-block;
-  transition: 0.5s;
+}
+
+.subMenuTxt {
+  font-family: "Adobe Garamond";
+  font-size: 1vw;
 }
 
 .buttonText {
   font-family: "Adobe Garamond";
+  text-align: center;
   text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  font-size: 1vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  border: none;
+  background-color: inherit;
+  display: inline-block;
 }
 
 .subText span:hover {

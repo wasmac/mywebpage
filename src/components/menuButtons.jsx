@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 
 const MenuButtons = () => {
   return (
-    <div className="buttonText text-white text-center text-lg font-light relative top-1/4 flex justify-center content-center flex-col ">
+    <div className="buttonText text-lg font-light  bottom-32 flex justify-center content-center flex-col ">
       <NavLink to="/WorkExpierience">
         <MennuButton text="WORK EXPERIENCE" />
       </NavLink>
