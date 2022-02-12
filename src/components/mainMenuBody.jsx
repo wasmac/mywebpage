@@ -32,7 +32,3 @@ class MainMenuBody extends Component {
 }
 
 export default MainMenuBody;
-
-{
-  /* <ReloadBar animationName="reloadbar" parentCallback={this.setRain} /> */
-}
