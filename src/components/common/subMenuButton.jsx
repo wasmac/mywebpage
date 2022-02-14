@@ -1,31 +1,5 @@
 import React, { Component } from "react";
 
-//each button navigates to different object
-//it takes "text" "component_name" and privdies "/ + component name form function"
-
-// function SubMenuButton({ text, position, parentCallback, ...rest }) {
-//   const options = Object.values({ ...rest });
-//   const classNames = position + " " + options;
-
-//   function handleClick() {
-//     this.props.parentCallback("visible");
-//   }
-//   return (
-//     <div>
-//       <div
-//         className={`" subMenuTxt text-white font-light
-//                     uppercase absolute flex px-0.5 hover:bg-red-900
-//                     cursor-default w-1/12 " ${classNames} `}
-//       >
-//         <button onClick={handleClick}>{text}</button>
-//       </div>
-//       <div>{jobsButtons}</div>
-//     </div>
-//   );
-// }
-
-// export default SubMenuButton;
-
 class SubMenuButton extends Component {
   constructor(props) {
     super(props);

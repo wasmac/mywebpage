@@ -3,6 +3,8 @@ import GenerateBackground from "../common/generateBackground";
 import background from "../../Images/AboutMeBG.png";
 import GenerateTxt from "./../common/generateTxt";
 import myPicture from "../../Images/me.png";
+import GenerateImage from "./../common/generateImage";
+import { NavLink } from "react-router-dom";
 
 class AboutMe extends Component {
   render() {
@@ -69,8 +71,24 @@ class AboutMe extends Component {
         <div className="w-[20%] h-[35%]  absolute left-[40%] top-[48%]">
           <GenerateTxt text={aboutMe} position="top-[0%] left-[0%]" />
         </div>
-        <div className="w-[25%] h-[55%] absolute left-[67%] top-[25%] ">
-          <GenerateBackground img={myPicture} />
+        <div className="w-[25%] h-[55%] absolute left-[66%] top-[20%] ">
+          <GenerateImage img={myPicture} animation="animate-pulse" rest=" " />
+        </div>
+        <div>
+          <NavLink to="/">
+            <GenerateTxt
+              text="Back"
+              position="top-[37%] left-[41.5%] "
+              options="hover:drop-shadow-[0_35px_35px_rgba(254,255,99,0.8)]"
+            />
+          </NavLink>
+          <NavLink to="/contactMe">
+            <GenerateTxt
+              text="Contact Me"
+              position="top-[37%] left-[51.2%]"
+              options="hover:drop-shadow-[0_35px_35px_rgba(254,255,99,0.8)]"
+            />
+          </NavLink>
         </div>
       </div>
     );
