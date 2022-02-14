@@ -16,7 +16,7 @@ class MainMenuBody extends Component {
   render() {
     if (this.state.status === "visible") {
       return (
-        <div className="flex bg-black w-screen h-screen items-center justify-center text-5xl">
+        <div className="flex bg-black w-screen h-screen items-center justify-center text-5xl ">
           <LinkedIcons />
           <MenuButtons />
         </div>
@@ -32,7 +32,3 @@ class MainMenuBody extends Component {
 }
 
 export default MainMenuBody;
-
-{
-  /* <ReloadBar animationName="reloadbar" parentCallback={this.setRain} /> */
-}

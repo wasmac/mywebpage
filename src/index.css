@@ -54,4 +54,19 @@ code {
   .mainTxt {
     @apply md:blur-none blur-lg transition-all duration-1000 ease-out;
   }
+  .scrollbar::-webkit-scrollbar {
+    width: 2vh;
+  }
+  .Flipped {
+    direction: rtl;
+  }
+
+  .scrollbar::-webkit-scrollbar-track {
+    border-radius: 59vh;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb {
+    background: #e0cbcb;
+    @apply bg-red-900;
+  }
 }

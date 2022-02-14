@@ -3,7 +3,7 @@ import bonfire from "../../Images/bonfire-darksouls.gif";
 
 const Bonfire = () => {
   return (
-    <div className="fixed bottom-24 left-20  w-1/4 h-1/4 brightness-50">
+    <div className="fixed shirnk left-20 bottom-1/4  w-1/6 h-1/6 brightness-50">
       <img src={bonfire} />
     </div>
   );

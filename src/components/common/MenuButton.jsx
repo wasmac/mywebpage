@@ -5,7 +5,7 @@ import React from "react";
 
 const MennuButton = ({ text }) => {
   return (
-    <strong className="flex px-0.5 hover:bg-red-900 justify-center text-center">
+    <strong className="flex py-[2%] hover:bg-red-900 justify-center text-center">
       {text}
     </strong>
   );

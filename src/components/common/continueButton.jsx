@@ -8,7 +8,10 @@ class ContinueButton extends Component {
   }
   render() {
     return (
-      <button className="subText " onClick={this.handleClick}>
+      <button
+        className="subText bottom-[30%] left-[42%]"
+        onClick={this.handleClick}
+      >
         {this.props.text}
       </button>
     );
