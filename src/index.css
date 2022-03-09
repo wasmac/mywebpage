@@ -3,11 +3,11 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url(//db.onlinewebfonts.com/c/fba46a1ae4879b52e51dfe8f0ece60df?family=Adobe+Garamond);
+@import url(https://db.onlinewebfonts.com/c/fba46a1ae4879b52e51dfe8f0ece60df?family=Adobe+Garamond);
 
 @font-face {
   font-family: "Adobe Garamond";
-  src: url("//db.onlinewebfonts.com/t/fba46a1ae4879b52e51dfe8f0ece60df.eot");
+  src: url("https://db.onlinewebfonts.com/t/fba46a1ae4879b52e51dfe8f0ece60df.eot");
 }
 
 body {
