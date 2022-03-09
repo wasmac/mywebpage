@@ -8,7 +8,7 @@ class MainMenuBody extends Component {
     super(props);
   }
   state = {
-    status: "not-visible",
+    status: this.props.menuStatus,
   };
   setMenuStatus = (data) => {
     this.setState({ status: data });
@@ -21,13 +21,14 @@ class MainMenuBody extends Component {
           <MenuButtons />
         </div>
       );
+    } else if (this.state.status === "not-visible") {
+      return (
+        <ContinueButton
+          text="Click to see my portfolio"
+          parentCallback={this.setMenuStatus}
+        />
+      );
     }
-    return (
-      <ContinueButton
-        text="Click to see my portfolio"
-        parentCallback={this.setMenuStatus}
-      />
-    );
   }
 }
 
