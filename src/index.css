@@ -55,7 +55,7 @@ code {
     @apply md:blur-none blur-lg transition-all duration-1000 ease-out;
   }
   .scrollbar::-webkit-scrollbar {
-    width: 2vh;
+    width: 1.9vh;
   }
   .Flipped {
     direction: rtl;

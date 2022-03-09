@@ -25,11 +25,11 @@ const App = () => {
   return (
     <div className="flex bg-black">
       <Routes>
-        <Route path="/" element={<MainMenu />} />
         <Route path="/AboutMe" element={<AboutMe />} />
         <Route path="/Projects" element={<Projects />} />
         <Route path="/WorkExpierience" element={<WorkExpierience />} />
         <Route path="/ContactMe" element={<ContactMe />} />
+        <Route path="/" element={<MainMenu menuStatus="not-visible" />} />
       </Routes>
     </div>
   );
