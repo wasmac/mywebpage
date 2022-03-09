@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/mywebpage/static/css/main.af81ab18.css",
+    "main.css": "/mywebpage/static/css/main.c049c0e6.css",
     "main.js": "/mywebpage/static/js/main.d7993026.js",
     "static/js/787.df36db08.chunk.js": "/mywebpage/static/js/787.df36db08.chunk.js",
     "static/media/drone3.png": "/mywebpage/static/media/drone3.41e013f54c9c5340c882.png",
@@ -20,6 +20,7 @@
     "static/media/dsp3.png": "/mywebpage/static/media/dsp3.1d612e13a51a10abb92c.png",
     "static/media/drone4.png": "/mywebpage/static/media/drone4.9751dcb4b41b4a7f5935.png",
     "static/media/pcb.png": "/mywebpage/static/media/pcb.af47cd5e5747b918d047.png",
+    "static/media/AGaramondPro-Regular.otf": "/mywebpage/static/media/AGaramondPro-Regular.9b0413a839f8514dc24b.otf",
     "static/media/speaker.png": "/mywebpage/static/media/speaker.4bc0f178a7d870b82c01.png",
     "static/media/driver.png": "/mywebpage/static/media/driver.07aa21e0df4d895218eb.png",
     "static/media/mayhtierMini.png": "/mywebpage/static/media/mayhtierMini.2af612bff1c710212ca4.png",
@@ -36,12 +37,12 @@
     "static/media/plate.png": "/mywebpage/static/media/plate.24e37445a6b52f54d547.png",
     "static/media/storeIn.png": "/mywebpage/static/media/storeIn.6601822c39e379cb4d52.png",
     "index.html": "/mywebpage/index.html",
-    "main.af81ab18.css.map": "/mywebpage/static/css/main.af81ab18.css.map",
+    "main.c049c0e6.css.map": "/mywebpage/static/css/main.c049c0e6.css.map",
     "main.d7993026.js.map": "/mywebpage/static/js/main.d7993026.js.map",
     "787.df36db08.chunk.js.map": "/mywebpage/static/js/787.df36db08.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.af81ab18.css",
+    "static/css/main.c049c0e6.css",
     "static/js/main.d7993026.js"
   ]
 }
