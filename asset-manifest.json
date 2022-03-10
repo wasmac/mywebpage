@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/mywebpage/static/css/main.41328f07.css",
-    "main.js": "/mywebpage/static/js/main.a7218e65.js",
+    "main.css": "/mywebpage/static/css/main.f2805aa6.css",
+    "main.js": "/mywebpage/static/js/main.ec7640a8.js",
     "static/js/787.df36db08.chunk.js": "/mywebpage/static/js/787.df36db08.chunk.js",
     "static/media/drone3.png": "/mywebpage/static/media/drone3.41e013f54c9c5340c882.png",
     "static/media/cisco.HEIC": "/mywebpage/static/media/cisco.e2e34ec2c360ff7e4c1d.HEIC",
@@ -37,12 +37,12 @@
     "static/media/plate.png": "/mywebpage/static/media/plate.24e37445a6b52f54d547.png",
     "static/media/storeIn.png": "/mywebpage/static/media/storeIn.6601822c39e379cb4d52.png",
     "index.html": "/mywebpage/index.html",
-    "main.41328f07.css.map": "/mywebpage/static/css/main.41328f07.css.map",
-    "main.a7218e65.js.map": "/mywebpage/static/js/main.a7218e65.js.map",
+    "main.f2805aa6.css.map": "/mywebpage/static/css/main.f2805aa6.css.map",
+    "main.ec7640a8.js.map": "/mywebpage/static/js/main.ec7640a8.js.map",
     "787.df36db08.chunk.js.map": "/mywebpage/static/js/787.df36db08.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.41328f07.css",
-    "static/js/main.a7218e65.js"
+    "static/css/main.f2805aa6.css",
+    "static/js/main.ec7640a8.js"
   ]
 }
